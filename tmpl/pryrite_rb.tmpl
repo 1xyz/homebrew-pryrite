@@ -14,9 +14,6 @@ class Pryrite < Formula
   def install
     libexec.install Dir["*"]
     bin.install_symlink libexec/"pryrite"
-    (bash_completion/"pryrite").write `#{bin}/pryrite completion -s bash`
-    (fish_completion/"pryrite.fish").write `#{bin}/pryrite completion -s fish`
-    (zsh_completion/"_pryrite").write `#{bin}/pryrite completion -s zsh`
   end
 
   def caveats
