@@ -6,8 +6,8 @@ require_relative "lib/private_strategy"
 class Pryrite < Formula
   desc "pryrite is a markdown executor program"
   homepage "https://github.com/1xyz/pryrite"
-  url "https://github.com/1xyz/pryrite/releases/download/0.10.19/pryrite-darwin-amd64-0.10.19.zip"
-  sha256 "f0ab1d1db568069b7283e3c4f19acfb642920a3e8e40ffbd864cdd60011bcd2c"
+  url "https://github.com/1xyz/pryrite/releases/download/0.10.20/pryrite-darwin-amd64-0.10.20.zip"
+  sha256 "492846d5cc616056d62939ae4dcb4491bbe6a9dd4357ce03d1715515a06e30f7"
   head "https://github.com/1xyz/homebrew-pryrite.git"
   # depends_on "coreutils"
 
@@ -29,6 +29,6 @@ class Pryrite < Formula
 
   # Homebrew requires tests.
   test do
-    assert_match "0.10.19", shell_output("#{bin}/pryrite --version", 2)
+    assert_match "0.10.20", shell_output("#{bin}/pryrite --version", 2)
   end
 end
